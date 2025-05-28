@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Post</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-xl mx-auto">
+    <h1 class="text-3xl font-bold mb-4">📝 New Blog Post</h1>
+    <form id="postForm" class="space-y-4">
+      <input type="text" id="title" placeholder="Title" class="w-full p-2 border rounded" required>
+      <input type="text" id="author" placeholder="Author" class="w-full p-2 border rounded" required>
+      <textarea id="content" placeholder="Content" class="w-full p-2 border rounded h-40" required></textarea>
+      <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Save Post</button>
+    </form>
+     <a href="index.html" class="text-blue-600 block mt-8">← Back to Home</a>
+
+  </div>
+
+ <!-- Toast container -->
+ <div id="toast" class="fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded shadow hidden z-50"></div>
+
+  <script src="create.js"></script>
+  </body>
+  </html>

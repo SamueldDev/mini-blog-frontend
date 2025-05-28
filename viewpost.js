@@ -4,7 +4,7 @@
     const params = new URLSearchParams(window.location.search)
     const id = params.get("id")
 
-    fetch(`http://mini-blog-backend-production-85b3.up.railway.app/posts/${id}`)
+    fetch(`https://mini-blog-backend-production-85b3.up.railway.app/posts/${id}`)
       .then( (res) => res.json())
       .then((post) => {
          const container = document.getElementById("post");

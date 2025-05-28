@@ -19,7 +19,7 @@
     const author = document.getElementById("author").value;
     const content = document.getElementById("content").value;
 
-    fetch("http://mini-blog-backend-production-85b3.up.railway.app/posts", {
+    fetch("https://mini-blog-backend-production-85b3.up.railway.app/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, author, content }),

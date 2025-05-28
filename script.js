@@ -3,7 +3,7 @@
 // fetch post
   document.addEventListener("DOMContentLoaded", () => {
   // fetch("http://localhost:7030/posts")
-   fetch("http://mini-blog-backend-production-85b3.up.railway.app/posts")
+   fetch("https://mini-blog-backend-production-85b3.up.railway.app/posts")
     .then((res) => res.json())
     .then((data) => {
       const container = document.getElementById("posts");
@@ -51,7 +51,7 @@ async function deletePost(id) {
   const confirmed = await showConfirm();
   if (!confirmed) return;
 
-  fetch(`http://mini-blog-backend-production-85b3.up.railway.app/posts/${id}`, { method: "DELETE" })
+  fetch(`https://mini-blog-backend-production-85b3.up.railway.app/posts/${id}`, { method: "DELETE" })
     .then((res) => {
       if (res.ok) {
         showToast("Post deleted successfully");

@@ -1,6 +1,5 @@
 
 // get post by id
-
     const params = new URLSearchParams(window.location.search)
     const id = params.get("id")
 
@@ -10,7 +9,7 @@
          const container = document.getElementById("post");
          container.innerHTML = `
             <h1 class="text-3xl font-bold mb-2">${post.title}</h1>
-            <p clas="text-gray-600 mb-4">by ${post.author} | ${new Date(post.createdAt).toLocaleDateString()}</p>
+            <p clas="text-gray-600 mb-4">by ${post.author} | ${new Date(post.created_at).toLocaleDateString()}</p>
             <p class="mb-6">${post.content}</p>
             <a href="index.html" class="text-blue-600">← Back to Home</a>
          `;

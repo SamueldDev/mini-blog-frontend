@@ -1,5 +1,4 @@
 
-
 // fetch post
   document.addEventListener("DOMContentLoaded", () => {
   // fetch("http://localhost:7030/posts")
@@ -25,7 +24,6 @@
       });
     });
 });
-
 
 
 // Show the modal and return a Promise that resolves true/false
@@ -62,12 +60,9 @@ async function deletePost(id) {
     });
 }
 
-
-
 function showToast(message, type = "success") {
   const toast = document.getElementById("toast");
   toast.textContent = message;
-
 
   // Apply color
   toast.className =

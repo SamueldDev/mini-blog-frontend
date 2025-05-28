@@ -1,5 +1,4 @@
 
-
 // create a post
  document.addEventListener("DOMContentLoaded", function () {
   console.log("Script loaded");
@@ -37,7 +36,6 @@
   });
 
 });
-
 
 
 function showToast(message, type = "success") {
